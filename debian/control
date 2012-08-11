@@ -1,0 +1,26 @@
+Source: libtext-jarowinkler-perl
+Section: perl
+Priority: optional
+Maintainer: Alexandre De Dommelin <adedommelin@tuxz.net>
+Build-Depends: debhelper (>= 8), perl
+Standards-Version: 3.9.2
+Homepage: http://search.cpan.org/dist/Text-JaroWinkler/
+
+Package: libtext-jarowinkler-perl
+Architecture: any
+Depends: ${misc:Depends}, ${perl:Depends}, ${shlibs:Depends}
+Description: An implementation of the Jaro-Winkler distance
+ Text::JaroWinkler implements the Jaro-Winkler distance. The Jaro-Winkler
+ distance is a measure of similarity between two strings. It is a variant of
+ the Jaro distance metric and mainly used in the area of record linkage
+ (duplicate detection). The higher the Jaro-Winkler distance for two strings
+ is, the more similar the strings are. The Jaro-Winkler distance metric is
+ designed and best suited for short strings such as person names. The score is
+ normalized such that 0 equates to no similarity and 1 is an exact match. More
+ information can be found on <http://en.wikipedia.org/wiki/Jaro-Winkler>
+ .
+ It is an XS wrapper of the original C implementation by the author of the
+ algorithm: <http://www.census.gov/geo/msb/stand/strcmp.c>, with some minor
+ modification to accept variance length input.
+ .
+ This description was automagically extracted from the module by dh-make-perl.
